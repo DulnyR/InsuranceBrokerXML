@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE payment [
+  <!ELEMENT payment (paymentAmount, accountNumber, accountName, billingAddress)>
+  
+  <!ELEMENT paymentAmount (#PCDATA)>
+  <!ELEMENT accountNumber (#PCDATA)>
+  <!ELEMENT accountName (firstName+, middleName?, surname)>
+  <!ELEMENT billingAddress (houseNo, street, city, country)>
+  
+  <!ELEMENT firstName (#PCDATA)>
+  <!ELEMENT middleName (#PCDATA)>
+  <!ELEMENT surname (#PCDATA)>
+  
+  <!ELEMENT houseNo (#PCDATA)>
+  <!ELEMENT street (#PCDATA)>
+  <!ELEMENT city (#PCDATA)>
+  <!ELEMENT country (#PCDATA)>
+]>
+<payment>
+  <paymentAmount>786</paymentAmount>
+  <accountNumber>1234567890123456</accountNumber>
+  <accountName>
+    <firstName>Mary</firstName>
+    <middleName>Elizabeth</middleName>
+    <surname>Johnson</surname>
+  </accountName>
+  <billingAddress>
+    <houseNo>174</houseNo>
+    <street>Green Avenue</street>
+    <city>Dublin</city>
+    <country>Ireland</country>
+  </billingAddress>
+</payment>

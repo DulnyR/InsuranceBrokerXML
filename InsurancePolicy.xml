@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE insurancePolicy [
+  <!ELEMENT insurancePolicy (accountName, premium, deductible, policyLimits, exclusions+)>
+  
+  <!ELEMENT accountName (firstName+, middleName?, surname)>
+  <!ELEMENT premium (#PCDATA)>
+  <!ELEMENT deductible (#PCDATA)>
+  <!ELEMENT policyLimits (#PCDATA)>
+  <!ELEMENT exclusions (#PCDATA)>
+  
+  <!ELEMENT firstName (#PCDATA)>
+  <!ELEMENT middleName (#PCDATA)>
+  <!ELEMENT surname (#PCDATA)>
+]>
+<insurancePolicy>
+  <accountName>
+    <firstName>Mary</firstName>
+    <middleName>Elizabeth</middleName>
+    <surname>Johnson</surname>
+  </accountName>
+  <premium>786</premium>
+  <deductible>1,000</deductible>
+  <policyLimits>50,000</policyLimits>
+  <exclusions>Normal wear and tear</exclusions>
+  <exclusions>Driving without licence</exclusions>
+</insurancePolicy>
