@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyHolder [
+  <!ELEMENT policyHolder (fullName, drivingExperience+, trafficViolationRecords?)>
+  <!ATTLIST policyHolder age CDATA #REQUIRED>
+  
+  <!ELEMENT fullName (firstName+, middleName?, surname)>
+  <!ELEMENT drivingExperience (monthsOfExperience, licenceType)>
+  <!ELEMENT trafficViolationRecords (incident, date, description)>
+  
+  <!ELEMENT firstName (#PCDATA)>
+  <!ELEMENT middleName (#PCDATA)>
+  <!ELEMENT surname (#PCDATA)>
+  
+  <!ELEMENT monthsOfExperience (#PCDATA)>
+  <!ELEMENT licenceType (#PCDATA)>
+  
+  <!ELEMENT incident (#PCDATA)>
+  <!ELEMENT date (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+]>
+<policyHolder age="42">
+  <fullName>
+    <firstName>Mary</firstName>
+    <middleName>Elizabeth</middleName>
+    <surname>Johnson</surname>
+  </fullName>
+  <drivingExperience>
+    <monthsOfExperience>72</monthsOfExperience>
+    <licenceType>B</licenceType>
+  </drivingExperience>
+  <drivingExperience>
+    <monthsOfExperience>5</monthsOfExperience>
+    <licenceType>C</licenceType>
+  </drivingExperience>
+  <trafficViolationRecords>
+    <incident>Speeding</incident>
+    <date>08/12/2022</date>
+    <description>Driving 65 in a 50 zone</description>
+  </trafficViolationRecords>
+</policyHolder>
