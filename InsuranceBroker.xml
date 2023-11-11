@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE insuranceCompany [
+  <!ELEMENT insuranceCompany (companyName, companyLocation+, numEmployees, companyDomain)>
+  
+  <!ELEMENT companyName (#PCDATA)>
+  <!ELEMENT companyLocation (area, city, country)>
+  <!ELEMENT numEmployees (#PCDATA)>
+  <!ELEMENT companyDomain (#PCDATA)>
+  
+  <!ELEMENT city (#PCDATA)>
+  <!ELEMENT country (#PCDATA)>
+]>
+<insuranceCompany>
+  <companyName>Allianz</companyName>
+  <companyLocation>
+    <area>Dublin 4</area>
+    <city>Dublin</city>
+    <country>Ireland</country>
+  </companyLocation>
+  <companyLocation>
+    <area>Koeniginstrasse</area>
+    <city>Munich</city>
+    <country>Germany</country>
+  </companyLocation>
+  <numEmployees>159,000</numEmployees>
+  <companyDomain>www.allianz.com</companyDomain>
+</insuranceCompany>
