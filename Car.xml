@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE car [
+  <!ELEMENT car (ownerName, vehicleID, details, engineSize, manufacturedDate)>
+  
+  <!ELEMENT ownerName (firstName+, middleName?, surname)>
+  <!ELEMENT vehicleID (#PCDATA)>
+  <!ELEMENT details (model, make)>
+  <!ELEMENT engineSize (#PCDATA)>
+  <!ELEMENT manufacturedDate(month, year)>
+  
+  <!ELEMENT firstName (#PCDATA)>
+  <!ELEMENT middleName (#PCDATA)>
+  <!ELEMENT surname (#PCDATA)>
+  
+  <!ELEMENT model (#PCDATA)>
+  <!ELEMENT make (#PCDATA)>
+  
+  <!ELEMENT month (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+]>
+<car>
+  <ownerName>
+    <firstName>Mary</firstName>
+    <middleName>Elizabeth</middleName>
+    <surname>Johnson</surname>
+  </ownerName>
+  <vehicleID>07D5678</vehicleID>
+  <details>
+    <make>Toyota</make>
+    <model>Yaris</model>
+  </details>
+  <engineSize>1.2L</engineSize>
+  <manufacturedDate>
+    <month>August</month>
+    <year>2007</year>
+  </manufacturedDate>
+</car>

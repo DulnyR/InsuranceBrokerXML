@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE insuranceCompanyRep [
+  <!ELEMENT insuranceCompanyRep (fullName, yearsOnJob, companyName, companyLocation, areaServiced+)>
+  
+  <!ELEMENT fullName (firstName+, middleName?, surname)>
+  <!ELEMENT yearsOnJob (#PCDATA)>
+  <!ELEMENT companyName (#PCDATA)>
+  <!ELEMENT companyLocation (area, city, country)>
+  <!ELEMENT areaServiced (#PCDATA)>
+  
+  <!ELEMENT firstName (#PCDATA)>
+  <!ELEMENT middleName (#PCDATA)>
+  <!ELEMENT surname (#PCDATA)>
+  
+  <!ELEMENT area (#PCDATA)>
+  <!ELEMENT city (#PCDATA)>
+  <!ELEMENT country (#PCDATA)>
+]>
+<insuranceCompanyRep>
+  <fullName>
+    <firstName>John</firstName>
+    <middleName>Alex</middleName>
+    <surname>Duffy</surname>
+  </fullName>
+  <yearsOnJob>7</yearsOnJob>
+  <companyName>Allianz</companyName>
+  <companyLocation>
+    <area>Dublin 4</area>
+    <city>Dublin</city>
+    <country>Ireland</country>
+  </companyLocation>
+  <areaServiced>Dublin</areaServiced>
+  <areaServiced>Kildare</areaServiced>
+  <areaServiced>Meath</areaServiced>
+  <areaServiced>Wicklow</areaServiced>
+</insuranceCompanyRep>
