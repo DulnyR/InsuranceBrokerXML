@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE policyHolder [
-  <!ELEMENT policyHolder (fullName, drivingExperience+, trafficViolationRecords?)>
+  <!ELEMENT policyHolder (fullName, drivingExperience+, trafficViolationRecords?, vehicleID?, bankAccountNumber)>
   <!ATTLIST policyHolder age CDATA #REQUIRED>
   
   <!ELEMENT fullName (firstName+, middleName?, surname)>
   <!ELEMENT drivingExperience (monthsOfExperience, licenceType)>
   <!ELEMENT trafficViolationRecords (incident, date, description)>
+  <!ELEMENT vehicleID (#PCDATA)>
+  <!ELEMENT bankAccountNumber (#PCDATA)>
   
   <!ELEMENT firstName (#PCDATA)>
   <!ELEMENT middleName (#PCDATA)>
@@ -37,4 +39,6 @@
     <date>08/12/2022</date>
     <description>Driving 65 in a 50 zone</description>
   </trafficViolationRecords>
+  <vehicleID>07D5678</vehicleID>
+  <bankAccountNumber>1234567890123456</bankAccountNumber>
 </policyHolder>

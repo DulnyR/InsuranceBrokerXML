@@ -4,16 +4,16 @@
   
   <!ELEMENT ownerName (firstName+, middleName?, surname)>
   <!ELEMENT vehicleID (#PCDATA)>
-  <!ELEMENT details (model, make)>
+  <!ELEMENT details (make, model)>
   <!ELEMENT engineSize (#PCDATA)>
-  <!ELEMENT manufacturedDate(month, year)>
+  <!ELEMENT manufacturedDate (month, year)>
   
   <!ELEMENT firstName (#PCDATA)>
   <!ELEMENT middleName (#PCDATA)>
   <!ELEMENT surname (#PCDATA)>
   
-  <!ELEMENT model (#PCDATA)>
   <!ELEMENT make (#PCDATA)>
+  <!ELEMENT model (#PCDATA)>
   
   <!ELEMENT month (#PCDATA)>
   <!ELEMENT year (#PCDATA)>

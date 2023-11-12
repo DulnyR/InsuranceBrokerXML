@@ -7,6 +7,7 @@
   <!ELEMENT numEmployees (#PCDATA)>
   <!ELEMENT companyDomain (#PCDATA)>
   
+  <!ELEMENT area (#PCDATA)>
   <!ELEMENT city (#PCDATA)>
   <!ELEMENT country (#PCDATA)>
 ]>
