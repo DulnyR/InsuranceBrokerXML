@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE insurancePolicy [
+<!DOCTYPE insurancePolicies [
   <!ELEMENT insurancePolicy (accountName, premium, deductible, policyLimits, exclusions+)>
+  
+  <!ELEMENT insurancePolicies (insurancePolicy+)>
   
   <!ELEMENT accountName (firstName+, middleName?, surname)>
   <!ELEMENT premium (#PCDATA)>
@@ -12,15 +14,58 @@
   <!ELEMENT middleName (#PCDATA)>
   <!ELEMENT surname (#PCDATA)>
 ]>
-<insurancePolicy>
+<insurancePolicies>
+  <insurancePolicy>
+    <accountName>
+      <firstName>Mary</firstName>
+      <middleName>Elizabeth</middleName>
+      <surname>Johnson</surname>
+    </accountName>
+    <premium>786</premium>
+    <deductible>1,000</deductible>
+    <policyLimits>50,000</policyLimits>
+    <exclusions>Normal wear and tear</exclusions>
+    <exclusions>Driving without licence</exclusions>
+  </insurancePolicy>
+  
+  <insurancePolicy>
   <accountName>
-    <firstName>Mary</firstName>
-    <middleName>Elizabeth</middleName>
-    <surname>Johnson</surname>
+    <firstName>John</firstName>
+    <middleName>Robert</middleName>
+    <surname>Smith</surname>
   </accountName>
-  <premium>786</premium>
-  <deductible>1,000</deductible>
-  <policyLimits>50,000</policyLimits>
-  <exclusions>Normal wear and tear</exclusions>
-  <exclusions>Driving without licence</exclusions>
-</insurancePolicy>
+  <premium>850</premium>
+  <deductible>1,200</deductible>
+  <policyLimits>75,000</policyLimits>
+  <exclusions>Accidents caused by negligence</exclusions>
+  <exclusions>Driving under the influence</exclusions>
+  </insurancePolicy>
+  
+  <insurancePolicy>
+    <accountName>
+      <firstName>Alice</firstName>
+      <middleName>Louise</middleName>
+      <surname>Williams</surname>
+    </accountName>
+    <premium>920</premium>
+    <deductible>800</deductible>
+    <policyLimits>60,000</policyLimits>
+    <exclusions>Acts of war</exclusions>
+    <exclusions>Intentional damage</exclusions>
+  </insurancePolicy>
+  
+  <insurancePolicy>
+    <accountName>
+      <firstName>Michael</firstName>
+      <middleName>James</middleName>
+      <surname>Miller</surname>
+    </accountName>
+    <premium>750</premium>
+    <deductible>1,500</deductible>
+    <policyLimits>55,000</policyLimits>
+    <exclusions>Nuclear incidents</exclusions>
+    <exclusions>Racing competitions</exclusions>
+  </insurancePolicy>
+
+
+</insurancePolicies>
