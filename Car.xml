@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE car [
   <!ELEMENT car (ownerName, vehicleID, details, engineSize, manufacturedDate)>
+  <!ELEMENT cars (car+)>
   
   <!ELEMENT ownerName (firstName+, middleName?, surname)>
   <!ELEMENT vehicleID (#PCDATA)>
@@ -18,20 +19,112 @@
   <!ELEMENT month (#PCDATA)>
   <!ELEMENT year (#PCDATA)>
 ]>
-<car>
-  <ownerName>
-    <firstName>Mary</firstName>
-    <middleName>Elizabeth</middleName>
-    <surname>Johnson</surname>
-  </ownerName>
-  <vehicleID>07D5678</vehicleID>
-  <details>
-    <make>Toyota</make>
-    <model>Yaris</model>
-  </details>
-  <engineSize>1.2L</engineSize>
-  <manufacturedDate>
-    <month>August</month>
-    <year>2007</year>
-  </manufacturedDate>
-</car>
+<cars>
+  <car>
+    <ownerName>
+      <firstName>Mary</firstName>
+      <middleName>Elizabeth</middleName>
+      <surname>Johnson</surname>
+    </ownerName>
+    <vehicleID>07D5678</vehicleID>
+    <details>
+      <make>Toyota</make>
+      <model>Yaris</model>
+    </details>
+    <engineSize>1.2L</engineSize>
+    <manufacturedDate>
+      <month>August</month>
+      <year>2007</year>
+    </manufacturedDate>
+  </car>
+  
+  <car>
+    <ownerName>
+      <firstName>John</firstName>
+      <middleName>Robert</middleName>
+      <surname>Smith</surname>
+    </ownerName>
+    <vehicleID>ABC123</vehicleID>
+    <details>
+      <make>Honda</make>
+      <model>Accord</model>
+    </details>
+    <engineSize>2.0L</engineSize>
+    <manufacturedDate>
+      <month>June</month>
+      <year>2015</year>
+    </manufacturedDate>
+  </car>
+
+  <car>
+    <ownerName>
+      <firstName>Alice</firstName>
+      <middleName>Louise</middleName>
+      <surname>Williams</surname>
+    </ownerName>
+    <vehicleID>XYZ789</vehicleID>
+    <details>
+      <make>Ford</make>
+      <model>Focus</model>
+    </details>
+    <engineSize>1.6L</engineSize>
+    <manufacturedDate>
+      <month>September</month>
+      <year>2019</year>
+    </manufacturedDate>
+  </car>
+
+  <car>
+    <ownerName>
+      <firstName>Michael</firstName>
+      <middleName>James</middleName>
+      <surname>Miller</surname>
+    </ownerName>
+    <vehicleID>DEF456</vehicleID>
+    <details>
+      <make>Chevrolet</make>
+      <model>Malibu</model>
+    </details>
+    <engineSize>1.8L</engineSize>
+    <manufacturedDate>
+      <month>January</month>
+      <year>2018</year>
+    </manufacturedDate>
+  </car>
+
+  <car>
+    <ownerName>
+      <firstName>Emily</firstName>
+      <middleName>Grace</middleName>
+      <surname>Anderson</surname>
+    </ownerName>
+    <vehicleID>GHI789</vehicleID>
+    <details>
+      <make>Hyundai</make>
+      <model>Elantra</model>
+    </details>
+    <engineSize>1.5L</engineSize>
+    <manufacturedDate>
+      <month>March</month>
+      <year>2016</year>
+    </manufacturedDate>
+  </car>
+
+  <car>
+    <ownerName>
+      <firstName>David</firstName>
+      <middleName>John</middleName>
+      <surname>Roberts</surname>
+    </ownerName>
+    <vehicleID>JKL012</vehicleID>
+    <details>
+      <make>BMW</make>
+      <model>3 Series</model>
+    </details>
+    <engineSize>2.5L</engineSize>
+    <manufacturedDate>
+      <month>May</month>
+      <year>2020</year>
+    </manufacturedDate>
+  </car>
+</cars>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE insuranceCompanyRep [
   <!ELEMENT insuranceCompanyRep (fullName, yearsOnJob, companyName, companyLocation, areaServiced+)>
+  <!ELEMENT insuranceCompanyReps (insuranceCompanyRep+)>
   
   <!ELEMENT fullName (firstName+, middleName?, surname)>
   <!ELEMENT yearsOnJob (#PCDATA)>
@@ -16,21 +17,118 @@
   <!ELEMENT city (#PCDATA)>
   <!ELEMENT country (#PCDATA)>
 ]>
-<insuranceCompanyRep>
-  <fullName>
-    <firstName>John</firstName>
-    <middleName>Alex</middleName>
-    <surname>Duffy</surname>
-  </fullName>
-  <yearsOnJob>7</yearsOnJob>
-  <companyName>Allianz</companyName>
-  <companyLocation>
-    <area>Dublin 4</area>
-    <city>Dublin</city>
-    <country>Ireland</country>
-  </companyLocation>
-  <areaServiced>Dublin</areaServiced>
-  <areaServiced>Kildare</areaServiced>
-  <areaServiced>Meath</areaServiced>
-  <areaServiced>Wicklow</areaServiced>
-</insuranceCompanyRep>
+<insuranceCompanyReps>
+  <insuranceCompanyRep>
+    <fullName>
+      <firstName>John</firstName>
+      <middleName>Alex</middleName>
+      <surname>Duffy</surname>
+    </fullName>
+    <yearsOnJob>7</yearsOnJob>
+    <companyName>Allianz</companyName>
+    <companyLocation>
+      <area>Dublin 4</area>
+      <city>Dublin</city>
+      <country>Ireland</country>
+    </companyLocation>
+    <areaServiced>Dublin</areaServiced>
+    <areaServiced>Kildare</areaServiced>
+    <areaServiced>Meath</areaServiced>
+    <areaServiced>Wicklow</areaServiced>
+  </insuranceCompanyRep>
+  
+  <insuranceCompanyRep>
+    <fullName>
+      <firstName>Mary</firstName>
+      <middleName>Elizabeth</middleName>
+      <surname>Johnson</surname>
+    </fullName>
+    <yearsOnJob>5</yearsOnJob>
+    <companyName>XYZ Insurance</companyName>
+    <companyLocation>
+      <area>City Center</area>
+      <city>New York</city>
+      <country>USA</country>
+    </companyLocation>
+    <areaServiced>New York</areaServiced>
+    <areaServiced>New Jersey</areaServiced>
+    <areaServiced>Connecticut</areaServiced>
+    <areaServiced>Pennsylvania</areaServiced>
+  </insuranceCompanyRep>
+
+  <insuranceCompanyRep>
+    <fullName>
+      <firstName>Alice</firstName>
+      <middleName>Louise</middleName>
+      <surname>Williams</surname>
+    </fullName>
+    <yearsOnJob>10</yearsOnJob>
+    <companyName>ABC Assurance</companyName>
+    <companyLocation>
+      <area>Financial District</area>
+      <city>San Francisco</city>
+      <country>USA</country>
+    </companyLocation>
+    <areaServiced>California</areaServiced>
+    <areaServiced>Nevada</areaServiced>
+    <areaServiced>Arizona</areaServiced>
+    <areaServiced>Oregon</areaServiced>
+  </insuranceCompanyRep>
+
+  <insuranceCompanyRep>
+    <fullName>
+      <firstName>Michael</firstName>
+      <middleName>James</middleName>
+      <surname>Miller</surname>
+    </fullName>
+    <yearsOnJob>8</yearsOnJob>
+    <companyName>Secure Insure</companyName>
+    <companyLocation>
+      <area>Canary Wharf</area>
+      <city>London</city>
+      <country>UK</country>
+    </companyLocation>
+    <areaServiced>London</areaServiced>
+    <areaServiced>Manchester</areaServiced>
+    <areaServiced>Birmingham</areaServiced>
+    <areaServiced>Liverpool</areaServiced>
+  </insuranceCompanyRep>
+
+  <insuranceCompanyRep>
+    <fullName>
+      <firstName>Emily</firstName>
+      <middleName>Grace</middleName>
+      <surname>Anderson</surname>
+    </fullName>
+    <yearsOnJob>6</yearsOnJob>
+    <companyName>Global Underwriters</companyName>
+    <companyLocation>
+      <area>Champs-Élysées</area>
+      <city>Paris</city>
+      <country>France</country>
+    </companyLocation>
+    <areaServiced>Paris</areaServiced>
+    <areaServiced>Nice</areaServiced>
+    <areaServiced>Lyon</areaServiced>
+    <areaServiced>Marseille</areaServiced>
+  </insuranceCompanyRep>
+
+  <insuranceCompanyRep>
+    <fullName>
+      <firstName>David</firstName>
+      <middleName>John</middleName>
+      <surname>Roberts</surname>
+    </fullName>
+    <yearsOnJob>12</yearsOnJob>
+    <companyName>Europa Insurance</companyName>
+    <companyLocation>
+      <area>Paseo de la Castellana</area>
+      <city>Madrid</city>
+      <country>Spain</country>
+    </companyLocation>
+    <areaServiced>Madrid</areaServiced>
+    <areaServiced>Barcelona</areaServiced>
+    <areaServiced>Valencia</areaServiced>
+    <areaServiced>Seville</areaServiced>
+  </insuranceCompanyRep>
+</insuranceCompanyReps>

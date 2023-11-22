@@ -66,6 +66,98 @@
     <exclusions>Nuclear incidents</exclusions>
     <exclusions>Racing competitions</exclusions>
   </insurancePolicy>
+  
+  <insurancePolicy>
+    <accountName>
+      <firstName>Emily</firstName>
+      <middleName>Grace</middleName>
+      <surname>Anderson</surname>
+    </accountName>
+    <premium>700</premium>
+    <deductible>1,000</deductible>
+    <policyLimits>45,000</policyLimits>
+    <exclusions>Earthquakes and natural disasters</exclusions>
+    <exclusions>Extreme sports</exclusions>
+  </insurancePolicy>
+  
+  <insurancePolicy>
+    <accountName>
+      <firstName>David</firstName>
+      <middleName>John</middleName>
+      <surname>Roberts</surname>
+    </accountName>
+    <premium>800</premium>
+    <deductible>1,200</deductible>
+    <policyLimits>70,000</policyLimits>
+    <exclusions>Acts of misuse</exclusions>
+    <exclusions>Self-inflicted injuries</exclusions>
+  </insurancePolicy>
+  
+  <insurancePolicy>
+    <accountName>
+      <firstName>Sophia</firstName>
+      <middleName>Isabella</middleName>
+      <surname>Lee</surname>
+    </accountName>
+    <premium>950</premium>
+    <deductible>900</deductible>
+    <policyLimits>80,000</policyLimits>
+    <exclusions>Pre-existing conditions</exclusions>
+    <exclusions>Reckless driving</exclusions>
+  </insurancePolicy>
+  
+  <insurancePolicy>
+    <accountName>
+      <firstName>William</firstName>
+      <middleName>Henry</middleName>
+      <surname>Turner</surname>
+    </accountName>
+    <premium>720</premium>
+    <deductible>1,300</deductible>
+    <policyLimits>65,000</policyLimits>
+    <exclusions>Illegal activities</exclusions>
+    <exclusions>Participation in protests</exclusions>
+  </insurancePolicy>
+  
+  <insurancePolicy>
+    <accountName>
+      <firstName>Olivia</firstName>
+      <middleName>Grace</middleName>
+      <surname>Baker</surname>
+    </accountName>
+    <premium>870</premium>
+    <deductible>1,100</deductible>
+    <policyLimits>55,000</policyLimits>
+    <exclusions>Acts of God</exclusions>
+    <exclusions>Intentional property damage</exclusions>
+  </insurancePolicy>
+  
+  <insurancePolicy>
+    <accountName>
+      <firstName>Nathan</firstName>
+      <middleName>Christopher</middleName>
+      <surname>Clark</surname>
+    </accountName>
+    <premium>780</premium>
+    <deductible>1,400</deductible>
+    <policyLimits>75,000</policyLimits>
+    <exclusions>Extreme weather events</exclusions>
+    <exclusions>Participation in hazardous activities</exclusions>
+  </insurancePolicy>
+  
+  <insurancePolicy>
+    <accountName>
+      <firstName>Ava</firstName>
+      <middleName>Sophie</middleName>
+      <surname>Morgan</surname>
+    </accountName>
+    <premium>920</premium>
+    <deductible>950</deductible>
+    <policyLimits>60,000</policyLimits>
+    <exclusions>Voluntary work</exclusions>
+    <exclusions>Wildlife handling</exclusions>
+  </insurancePolicy>
+    
 
 
 </insurancePolicies>

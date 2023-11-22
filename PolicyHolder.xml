@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE policyHolder [
   <!ELEMENT policyHolder (fullName, drivingExperience+, trafficViolationRecords?, vehicleID?, bankAccountNumber)>
+  <!ELEMENT policyHolders (policyHolder+)>
+  
   <!ATTLIST policyHolder age CDATA #REQUIRED>
   
   <!ELEMENT fullName (firstName+, middleName?, surname)>
@@ -20,25 +22,142 @@
   <!ELEMENT date (#PCDATA)>
   <!ELEMENT description (#PCDATA)>
 ]>
-<policyHolder age="42">
-  <fullName>
-    <firstName>Mary</firstName>
-    <middleName>Elizabeth</middleName>
-    <surname>Johnson</surname>
-  </fullName>
-  <drivingExperience>
-    <monthsOfExperience>72</monthsOfExperience>
-    <licenceType>B</licenceType>
-  </drivingExperience>
-  <drivingExperience>
-    <monthsOfExperience>5</monthsOfExperience>
-    <licenceType>C</licenceType>
-  </drivingExperience>
-  <trafficViolationRecords>
-    <incident>Speeding</incident>
-    <date>08/12/2022</date>
-    <description>Driving 65 in a 50 zone</description>
-  </trafficViolationRecords>
-  <vehicleID>07D5678</vehicleID>
-  <bankAccountNumber>1234567890123456</bankAccountNumber>
-</policyHolder>
+<policyHolders>
+  <policyHolder age="42">
+    <fullName>
+      <firstName>Mary</firstName>
+      <middleName>Elizabeth</middleName>
+      <surname>Johnson</surname>
+    </fullName>
+    <drivingExperience>
+      <monthsOfExperience>72</monthsOfExperience>
+      <licenceType>B</licenceType>
+    </drivingExperience>
+    <drivingExperience>
+      <monthsOfExperience>5</monthsOfExperience>
+      <licenceType>C</licenceType>
+    </drivingExperience>
+    <trafficViolationRecords>
+      <incident>Speeding</incident>
+      <date>08/12/2022</date>
+      <description>Driving 65 in a 50 zone</description>
+    </trafficViolationRecords>
+    <vehicleID>07D5678</vehicleID>
+    <bankAccountNumber>1234567890123456</bankAccountNumber>
+  </policyHolder>
+  
+  <policyHolder age="35">
+    <fullName>
+      <firstName>John</firstName>
+      <middleName>Robert</middleName>
+      <surname>Smith</surname>
+    </fullName>
+    <drivingExperience>
+      <monthsOfExperience>60</monthsOfExperience>
+      <licenceType>A</licenceType>
+    </drivingExperience>
+    <drivingExperience>
+      <monthsOfExperience>12</monthsOfExperience>
+      <licenceType>B</licenceType>
+    </drivingExperience>
+    <trafficViolationRecords>
+      <incident>Running a red light</incident>
+      <date>05/15/2022</date>
+      <description>Failed to stop at a red light intersection</description>
+    </trafficViolationRecords>
+    <vehicleID>ABC123</vehicleID>
+    <bankAccountNumber>9876543210987654</bankAccountNumber>
+  </policyHolder>
+
+  <policyHolder age="28">
+    <fullName>
+      <firstName>Alice</firstName>
+      <middleName>Louise</middleName>
+      <surname>Williams</surname>
+    </fullName>
+    <drivingExperience>
+      <monthsOfExperience>24</monthsOfExperience>
+      <licenceType>C</licenceType>
+    </drivingExperience>
+    <drivingExperience>
+      <monthsOfExperience>8</monthsOfExperience>
+      <licenceType>D</licenceType>
+    </drivingExperience>
+    <trafficViolationRecords>
+      <incident>Failure to yield</incident>
+      <date>07/20/2022</date>
+      <description>Did not yield at a stop sign</description>
+    </trafficViolationRecords>
+    <vehicleID>XYZ789</vehicleID>
+    <bankAccountNumber>5555666677778888</bankAccountNumber>
+  </policyHolder>
+
+  <policyHolder age="45">
+    <fullName>
+      <firstName>Michael</firstName>
+      <middleName>James</middleName>
+      <surname>Miller</surname>
+    </fullName>
+    <drivingExperience>
+      <monthsOfExperience>84</monthsOfExperience>
+      <licenceType>A</licenceType>
+    </drivingExperience>
+    <drivingExperience>
+      <monthsOfExperience>18</monthsOfExperience>
+      <licenceType>C</licenceType>
+    </drivingExperience>
+    <trafficViolationRecords>
+      <incident>Reckless driving</incident>
+      <date>06/10/2022</date>
+      <description>Excessive speed and dangerous maneuvers</description>
+    </trafficViolationRecords>
+    <vehicleID>DEF456</vehicleID>
+    <bankAccountNumber>1111222233334444</bankAccountNumber>
+  </policyHolder>
+
+  <policyHolder age="31">
+    <fullName>
+      <firstName>Emily</firstName>
+      <middleName>Grace</middleName>
+      <surname>Anderson</surname>
+    </fullName>
+    <drivingExperience>
+      <monthsOfExperience>36</monthsOfExperience>
+      <licenceType>B</licenceType>
+    </drivingExperience>
+    <drivingExperience>
+      <monthsOfExperience>6</monthsOfExperience>
+      <licenceType>D</licenceType>
+    </drivingExperience>
+    <trafficViolationRecords>
+      <incident>Seatbelt violation</incident>
+      <date>09/05/2022</date>
+      <description>Failure to wear a seatbelt while driving</description>
+    </trafficViolationRecords>
+    <vehicleID>GHI789</vehicleID>
+    <bankAccountNumber>4444333322221111</bankAccountNumber>
+  </policyHolder>
+
+  <policyHolder age="38">
+    <fullName>
+      <firstName>David</firstName>
+      <middleName>John</middleName>
+      <surname>Roberts</surname>
+    </fullName>
+    <drivingExperience>
+      <monthsOfExperience>48</monthsOfExperience>
+      <licenceType>A</licenceType>
+    </drivingExperience>
+    <drivingExperience>
+      <monthsOfExperience>10</monthsOfExperience>
+      <licenceType>C</licenceType>
+    </drivingExperience>
+    <trafficViolationRecords>
+      <incident>Improper turning</incident>
+      <date>04/03/2022</date>
+      <description>Turned without signaling</description>
+    </trafficViolationRecords>
+    <vehicleID>JKL012</vehicleID>
+    <bankAccountNumber>9999888877776666</bankAccountNumber>
+  </policyHolder>
+</policyHolders>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE insuranceCompany [
   <!ELEMENT insuranceCompany (companyName, companyLocation+, numEmployees, companyDomain)>
+  <!ELEMENT insuranceCompanies (insuranceCompany+)>
   
   <!ELEMENT companyName (#PCDATA)>
   <!ELEMENT companyLocation (area, city, country)>
@@ -11,18 +12,70 @@
   <!ELEMENT city (#PCDATA)>
   <!ELEMENT country (#PCDATA)>
 ]>
-<insuranceCompany>
-  <companyName>Allianz</companyName>
-  <companyLocation>
-    <area>Dublin 4</area>
-    <city>Dublin</city>
-    <country>Ireland</country>
-  </companyLocation>
-  <companyLocation>
-    <area>Koeniginstrasse</area>
-    <city>Munich</city>
-    <country>Germany</country>
-  </companyLocation>
-  <numEmployees>159,000</numEmployees>
-  <companyDomain>www.allianz.com</companyDomain>
-</insuranceCompany>
+<insuranceCompanies>
+  <insuranceCompany>
+    <companyName>Allianz</companyName>
+    <companyLocation>
+      <area>Dublin 4</area>
+      <city>Dublin</city>
+      <country>Ireland</country>
+    </companyLocation>
+    <numEmployees>159,000</numEmployees>
+    <companyDomain>www.allianz.com</companyDomain>
+  </insuranceCompany>
+  
+  <insuranceCompany>
+    <companyName>XYZ Insurance</companyName>
+    <companyLocation>
+      <area>City Center</area>
+      <city>New York</city>
+      <country>USA</country>
+    </companyLocation>
+    <numEmployees>75,000</numEmployees>
+    <companyDomain>www.xyzinsurance.com</companyDomain>
+  </insuranceCompany>
+
+  <insuranceCompany>
+    <companyName>ABC Assurance</companyName>
+    <companyLocation>
+      <area>Financial District</area>
+      <city>San Francisco</city>
+      <country>USA</country>
+    </companyLocation>
+    <numEmployees>50,000</numEmployees>
+    <companyDomain>www.abcassurance.com</companyDomain>
+  </insuranceCompany>
+
+  <insuranceCompany>
+    <companyName>Secure Insure</companyName>
+    <companyLocation>
+      <area>Canary Wharf</area>
+      <city>London</city>
+      <country>UK</country>
+    </companyLocation>
+    <numEmployees>90,000</numEmployees>
+    <companyDomain>www.secureinsure.co.uk</companyDomain>
+  </insuranceCompany>
+
+  <insuranceCompany>
+    <companyName>Global Underwriters</companyName>
+    <companyLocation>
+      <area>Champs-Élysées</area>
+      <city>Paris</city>
+      <country>France</country>
+    </companyLocation>
+    <numEmployees>65,000</numEmployees>
+    <companyDomain>www.globalunderwriters.fr</companyDomain>
+  </insuranceCompany>
+
+  <insuranceCompany>
+    <companyName>Europa Insurance</companyName>
+    <companyLocation>
+      <area>Paseo de la Castellana</area>
+      <city>Madrid</city>
+      <country>Spain</country>
+    </companyLocation>
+    <numEmployees>80,000</numEmployees>
+    <companyDomain>www.europainsurance.es</companyDomain>
+  </insuranceCompany>
+</insuranceCompanies>
