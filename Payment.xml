@@ -1,24 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE payments [
+  <!--
+    Purpose of the payment element: Represents an individual payment and its associated details.
+  -->
   <!ELEMENT payment (paymentAmount, accountNumber, accountName, billingAddress)>
+
+  <!--
+    Purpose of the payments element: Contains a list of payment elements.
+  -->
   <!ELEMENT payments (payment+)>
-  
+
+  <!--
+    Purpose of the paymentAmount, accountNumber, accountName, and billingAddress elements: Represent specific details of a payment.
+  -->
   <!ELEMENT paymentAmount (#PCDATA)>
   <!ELEMENT accountNumber (#PCDATA)>
   <!ELEMENT accountName (firstName+, middleName?, surname)>
   <!ELEMENT billingAddress (houseNo, street, city, country)>
-  
+
+  <!--
+    Purpose of the firstName, middleName, and surname elements: Represent components of an account name.
+  -->
   <!ELEMENT firstName (#PCDATA)>
   <!ELEMENT middleName (#PCDATA)>
   <!ELEMENT surname (#PCDATA)>
-  
+
+  <!--
+    Purpose of the houseNo, street, city, and country elements: Represent components of a billing address.
+  -->
   <!ELEMENT houseNo (#PCDATA)>
   <!ELEMENT street (#PCDATA)>
   <!ELEMENT city (#PCDATA)>
   <!ELEMENT country (#PCDATA)>
 ]>
+
+<!-- 
+  The payments element contains information about multiple payments.
+-->
 <payments>
+  <!--
+    Individual payment elements representing different payments.
+  -->
   <payment>
+    <!--
+      Payment details, account number, account name, and billing address for the payment.
+    -->
     <paymentAmount>786</paymentAmount>
     <accountNumber>1234567890123456</accountNumber>
     <accountName>

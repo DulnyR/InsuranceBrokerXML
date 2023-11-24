@@ -1,24 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE insuranceCompanyReps [
+  <!--
+    Purpose of the insuranceCompanyRep element: Represents an individual insurance company representative and their associated details.
+  -->
   <!ELEMENT insuranceCompanyRep (fullName, yearsOnJob, companyName, companyLocation, areaServiced+)>
+
+  <!--
+    Purpose of the insuranceCompanyReps element: Contains a list of insuranceCompanyRep elements.
+  -->
   <!ELEMENT insuranceCompanyReps (insuranceCompanyRep+)>
-  
+
+  <!--
+    Purpose of the fullName, yearsOnJob, companyName, companyLocation, and areaServiced elements: Represent specific details of an insurance company representative.
+  -->
   <!ELEMENT fullName (firstName+, middleName?, surname)>
   <!ELEMENT yearsOnJob (#PCDATA)>
   <!ELEMENT companyName (#PCDATA)>
   <!ELEMENT companyLocation (area, city, country)>
   <!ELEMENT areaServiced (#PCDATA)>
-  
+
+  <!--
+    Purpose of the firstName, middleName, and surname elements: Represent components of a full name.
+  -->
   <!ELEMENT firstName (#PCDATA)>
   <!ELEMENT middleName (#PCDATA)>
   <!ELEMENT surname (#PCDATA)>
-  
+
+  <!--
+    Purpose of the area, city, and country elements: Represent components of the company location.
+  -->
   <!ELEMENT area (#PCDATA)>
   <!ELEMENT city (#PCDATA)>
   <!ELEMENT country (#PCDATA)>
 ]>
+
+<!-- 
+  The insuranceCompanyReps element contains information about multiple insurance company representatives.
+-->
 <insuranceCompanyReps>
+  <!--
+    Individual insuranceCompanyRep elements representing different representatives.
+  -->
   <insuranceCompanyRep>
+    <!--
+      Full name, years on the job, company details, company location, and areas serviced for the representative.
+    -->
     <fullName>
       <firstName>John</firstName>
       <middleName>Alex</middleName>

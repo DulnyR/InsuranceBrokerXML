@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE insuranceCompanies [
+  <!--
+    Purpose of the insuranceCompany element: Represents an individual insurance company and its associated details.
+  -->
   <!ELEMENT insuranceCompany (companyName, companyLocation+, numEmployees, companyDomain)>
+
+  <!--
+    Purpose of the insuranceCompanies element: Contains a list of insuranceCompany elements.
+  -->
   <!ELEMENT insuranceCompanies (insuranceCompany+)>
-  
+
+  <!--
+    Purpose of the companyName, companyLocation, numEmployees, and companyDomain elements: Represent specific details of an insurance company.
+  -->
   <!ELEMENT companyName (#PCDATA)>
   <!ELEMENT companyLocation (area, city, country)>
   <!ELEMENT numEmployees (#PCDATA)>
   <!ELEMENT companyDomain (#PCDATA)>
-  
+
+  <!--
+    Purpose of the area, city, and country elements: Represent components of a company location.
+  -->
   <!ELEMENT area (#PCDATA)>
   <!ELEMENT city (#PCDATA)>
   <!ELEMENT country (#PCDATA)>
 ]>
+
+<!-- 
+  The insuranceCompanies element contains information about multiple insurance companies.
+-->
 <insuranceCompanies>
+  <!--
+    Individual insuranceCompany elements representing different companies.
+  -->
   <insuranceCompany>
+    <!--
+      Company name, location details, number of employees, and domain information for the company.
+    -->
     <companyName>Allianz</companyName>
     <companyLocation>
       <area>Dublin 4</area>

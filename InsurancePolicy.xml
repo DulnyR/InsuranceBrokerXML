@@ -1,31 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE insurancePolicies [
+  <!--
+    Purpose of the insurancePolicy element: Represents an individual insurance policy and its details.
+  -->
   <!ELEMENT insurancePolicy (accountName, premium, deductible, policyLimits, exclusions+)>
-  
+
+  <!--
+    Purpose of the insurancePolicies element: Contains a list of insurancePolicy elements.
+  -->
   <!ELEMENT insurancePolicies (insurancePolicy+)>
-  
+
+  <!--
+    Purpose of the accountName element: Represents the account name associated with the insurance policy.
+  -->
   <!ELEMENT accountName (firstName+, middleName?, surname)>
+
+  <!--
+    Purpose of the premium, deductible, policyLimits, and exclusions elements: Represent specific details of an insurance policy.
+  -->
   <!ELEMENT premium (#PCDATA)>
   <!ELEMENT deductible (#PCDATA)>
   <!ELEMENT policyLimits (#PCDATA)>
   <!ELEMENT exclusions (#PCDATA)>
-  
+
+  <!--
+    Purpose of the firstName, middleName, and surname elements: Represent components of an account name.
+  -->
   <!ELEMENT firstName (#PCDATA)>
   <!ELEMENT middleName (#PCDATA)>
   <!ELEMENT surname (#PCDATA)>
 ]>
+
+<!-- 
+  The insurancePolicies element contains information about multiple insurance policies.
+-->
 <insurancePolicies>
+  <!--
+    Individual insurancePolicy elements representing different insurance policies.
+  -->
   <insurancePolicy>
+    <!--
+      Account name details for the insurance policy.
+    -->
     <accountName>
       <firstName>Mary</firstName>
       <middleName>Elizabeth</middleName>
       <surname>Johnson</surname>
     </accountName>
+    <!--
+      Premium, deductible, policy limits, and exclusions details for the insurance policy.
+    -->
     <premium>786</premium>
     <deductible>1,000</deductible>
     <policyLimits>50,000</policyLimits>
     <exclusions>Normal wear and tear</exclusions>
-    <exclusions>Driving without licence</exclusions>
+    <exclusions>Driving without a license</exclusions>
   </insurancePolicy>
   
   <insurancePolicy>

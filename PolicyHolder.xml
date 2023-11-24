@@ -1,34 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE policyHolders [
-  <!ELEMENT policyHolder (fullName, drivingExperience+, trafficViolationRecords?, vehicleID?, bankAccountNumber)>
-  <!ELEMENT policyHolders (policyHolder+)>
+<!DOCTYPE policyHolder [
+  <!-- 
+    Purpose of the policyHolder element: Represents an individual policyholder and their associated information.
+  -->
+  <!ELEMENT policyHolders (fullName, drivingExperience+, trafficViolationRecords?, vehicleID?, bankAccountNumber)>
   
+  <!-- 
+    Purpose of the policyHolders element: Contains a list of policyHolder elements.
+  -->
+  <!ELEMENT policyHolders (policyHolder+)>
+
+  <!-- 
+    Purpose of the age attribute: Represents the age of the policyholder.
+    Cardinality: #REQUIRED - Age is a required attribute for each policyholder.
+  -->
   <!ATTLIST policyHolder age CDATA #REQUIRED>
   
+  <!-- 
+    Purpose of the fullName element: Represents the full name of the policyholder.
+  -->
   <!ELEMENT fullName (firstName+, middleName?, surname)>
+  
+  <!-- 
+    Purpose of the drivingExperience element: Represents the driving experience details of the policyholder.
+    Cardinality: + - At least one drivingExperience element is required for each policyholder.
+  -->
   <!ELEMENT drivingExperience (monthsOfExperience, licenceType)>
+  
+  <!-- 
+    Purpose of the trafficViolationRecords element: Represents the traffic violation records of the policyholder.
+    Cardinality: ? - The presence of trafficViolationRecords is optional for each policyholder.
+  -->
   <!ELEMENT trafficViolationRecords (incident, date, description)>
+  
+  <!-- 
+    Purpose of the vehicleID element: Represents the vehicle identification number of the policyholder's vehicle.
+    Cardinality: ? - The presence of vehicleID is optional for each policyholder.
+  -->
   <!ELEMENT vehicleID (#PCDATA)>
+  
+  <!-- 
+    Purpose of the bankAccountNumber element: Represents the bank account number of the policyholder.
+  -->
   <!ELEMENT bankAccountNumber (#PCDATA)>
   
+  <!-- 
+    Purpose of the firstName, middleName, and surname elements: Represent the components of the full name.
+  -->
   <!ELEMENT firstName (#PCDATA)>
   <!ELEMENT middleName (#PCDATA)>
   <!ELEMENT surname (#PCDATA)>
   
+  <!-- 
+    Purpose of the monthsOfExperience and licenceType elements: Represent details of driving experience.
+  -->
   <!ELEMENT monthsOfExperience (#PCDATA)>
   <!ELEMENT licenceType (#PCDATA)>
   
+  <!-- 
+    Purpose of the incident, date, and description elements: Represent details of a traffic violation.
+  -->
   <!ELEMENT incident (#PCDATA)>
   <!ELEMENT date (#PCDATA)>
   <!ELEMENT description (#PCDATA)>
 ]>
+
+<!-- 
+  The policyHolders element contains information about multiple policyholders.
+-->
 <policyHolders>
+  <!-- 
+    Individual policyHolder elements representing different policyholders.
+  -->
   <policyHolder age="42">
+    <!-- 
+      Full name details for the policyholder.
+    -->
     <fullName>
       <firstName>Mary</firstName>
       <middleName>Elizabeth</middleName>
       <surname>Johnson</surname>
     </fullName>
+    <!-- 
+      Driving experience details for the policyholder.
+    -->
     <drivingExperience>
       <monthsOfExperience>72</monthsOfExperience>
       <licenceType>B</licenceType>
@@ -37,14 +91,21 @@
       <monthsOfExperience>5</monthsOfExperience>
       <licenceType>C</licenceType>
     </drivingExperience>
+    <!-- 
+      Traffic violation records for the policyholder.
+    -->
     <trafficViolationRecords>
       <incident>Speeding</incident>
       <date>08/12/2022</date>
       <description>Driving 65 in a 50 zone</description>
     </trafficViolationRecords>
+    <!-- 
+      Vehicle ID and bank account number for the policyholder.
+    -->
     <vehicleID>07D5678</vehicleID>
     <bankAccountNumber>1234567890123456</bankAccountNumber>
   </policyHolder>
+
   
   <policyHolder age="35">
     <fullName>

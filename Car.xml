@@ -1,26 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE cars [
+  <!--
+    Purpose of the car element: Represents an individual car and its associated details.
+  -->
   <!ELEMENT car (ownerName, vehicleID, details, engineSize, manufacturedDate)>
+
+  <!--
+    Purpose of the cars element: Contains a list of car elements.
+  -->
   <!ELEMENT cars (car+)>
-  
+
+  <!--
+    Purpose of the ownerName, vehicleID, details, engineSize, and manufacturedDate elements: Represent specific details of a car.
+  -->
   <!ELEMENT ownerName (firstName+, middleName?, surname)>
   <!ELEMENT vehicleID (#PCDATA)>
   <!ELEMENT details (make, model)>
   <!ELEMENT engineSize (#PCDATA)>
   <!ELEMENT manufacturedDate (month, year)>
-  
+
+  <!--
+    Purpose of the firstName, middleName, and surname elements: Represent components of the owner's name.
+  -->
   <!ELEMENT firstName (#PCDATA)>
   <!ELEMENT middleName (#PCDATA)>
   <!ELEMENT surname (#PCDATA)>
-  
+
+  <!--
+    Purpose of the make and model elements: Represent components of the car details.
+  -->
   <!ELEMENT make (#PCDATA)>
   <!ELEMENT model (#PCDATA)>
-  
+
+  <!--
+    Purpose of the month and year elements: Represent components of the manufactured date.
+  -->
   <!ELEMENT month (#PCDATA)>
   <!ELEMENT year (#PCDATA)>
 ]>
+
+<!-- 
+  The cars element contains information about multiple cars.
+-->
 <cars>
+  <!--
+    Individual car elements representing different cars.
+  -->
   <car>
+    <!--
+      Owner's name, vehicle ID, details, engine size, and manufactured date for the car.
+    -->
     <ownerName>
       <firstName>Mary</firstName>
       <middleName>Elizabeth</middleName>
