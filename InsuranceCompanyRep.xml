@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE insuranceCompanyRep [
+<!DOCTYPE insuranceCompanyReps [
   <!ELEMENT insuranceCompanyRep (fullName, yearsOnJob, companyName, companyLocation, areaServiced+)>
   <!ELEMENT insuranceCompanyReps (insuranceCompanyRep+)>
   
