@@ -6,12 +6,13 @@
   <!ELEMENT insurancePolicy (accountName, premium, deductible, policyLimits, exclusions+)>
 
   <!--
-    Purpose of the insurancePolicies element: Contains a list of insurancePolicy elements.
+    Purpose of the insurancePolicies element: Contains a list of insurancePolicy elements of which at least one is required ("+").
   -->
   <!ELEMENT insurancePolicies (insurancePolicy+)>
 
   <!--
     Purpose of the accountName element: Represents the account name associated with the insurance policy.
+    Cardinality: "+" is used for the firstName element as everyone has a first name, while "?" is used for middle name as not everyone has a middle name and is therefore optional.
   -->
   <!ELEMENT accountName (firstName+, middleName?, surname)>
 

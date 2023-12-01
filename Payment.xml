@@ -6,12 +6,13 @@
   <!ELEMENT payment (paymentAmount, accountNumber, accountName, billingAddress)>
 
   <!--
-    Purpose of the payments element: Contains a list of payment elements.
+    Purpose of the payments element: Contains a list of payment elements of which at least one is necessary ("+").
   -->
   <!ELEMENT payments (payment+)>
 
   <!--
     Purpose of the paymentAmount, accountNumber, accountName, and billingAddress elements: Represent specific details of a payment.
+    Cardinality : At least one firstName ("+") is required (everyone has one) while middleName ("?") is optional because the opposite is true.
   -->
   <!ELEMENT paymentAmount (#PCDATA)>
   <!ELEMENT accountNumber (#PCDATA)>

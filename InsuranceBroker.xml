@@ -2,11 +2,12 @@
 <!DOCTYPE insuranceCompanies [
   <!--
     Purpose of the insuranceCompany element: Represents an individual insurance company and its associated details.
+    Cardinality: "+" is used for companyLocation as the company could have one or more locations in use.
   -->
   <!ELEMENT insuranceCompany (companyName, companyLocation+, numEmployees, companyDomain)>
 
   <!--
-    Purpose of the insuranceCompanies element: Contains a list of insuranceCompany elements.
+    Purpose of the insuranceCompanies element: Contains a list of insuranceCompany elements (of which at least one is required - "+").
   -->
   <!ELEMENT insuranceCompanies (insuranceCompany+)>
 
@@ -31,7 +32,7 @@
 -->
 <insuranceCompanies>
   <!--
-    Individual insuranceCompany elements representing different companies.
+    Individual insuranceCompany elements with each representing different companies.
   -->
   <insuranceCompany>
     <!--

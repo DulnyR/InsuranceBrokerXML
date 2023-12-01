@@ -1,8 +1,8 @@
-<!DOCTYPE policyHolder [
+<!DOCTYPE policyHolders [
   <!-- 
     Purpose of the policyHolder element: Represents an individual policyholder and their associated information.
   -->
-  <!ELEMENT policyHolders (fullName, drivingExperience+, trafficViolationRecords?, vehicleID?, bankAccountNumber)>
+  <!ELEMENT policyHolder (fullName, drivingExperience+, trafficViolationRecords?, vehicleID?, bankAccountNumber)>
   
   <!-- 
     Purpose of the policyHolders element: Contains a list of policyHolder elements.
@@ -17,6 +17,7 @@
   
   <!-- 
     Purpose of the fullName element: Represents the full name of the policyholder.
+    Cardinality: "+" is used for the firstName element as everyone has a first name, while "?" is used for middle name as not everyone has a middle name and is therefore optional.
   -->
   <!ELEMENT fullName (firstName+, middleName?, surname)>
   
@@ -34,7 +35,7 @@
   
   <!-- 
     Purpose of the vehicleID element: Represents the vehicle identification number of the policyholder's vehicle.
-    Cardinality: ? - The presence of vehicleID is optional for each policyholder.
+    Cardinality: ? - The vehicleID element is optional for each policyholder.
   -->
   <!ELEMENT vehicleID (#PCDATA)>
   

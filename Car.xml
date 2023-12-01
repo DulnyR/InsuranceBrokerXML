@@ -6,12 +6,13 @@
   <!ELEMENT car (ownerName, vehicleID, details, engineSize, manufacturedDate)>
 
   <!--
-    Purpose of the cars element: Contains a list of car elements.
+    Purpose of the cars element: Contains a list of car elements with the cardinality "+" requiring at least 1.
   -->
   <!ELEMENT cars (car+)>
 
   <!--
     Purpose of the ownerName, vehicleID, details, engineSize, and manufacturedDate elements: Represent specific details of a car.
+    Cardinality: "+" & "?"; firstName uses "+" which requires at least one of the datatype to be included while middleName uses "?", which means it has optional use. (Everyone has a first name but not everyone has a middle name)
   -->
   <!ELEMENT ownerName (firstName+, middleName?, surname)>
   <!ELEMENT vehicleID (#PCDATA)>
