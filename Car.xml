@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Purpose: This XML document serves as a structured representation of car-related information. It defines the structure for individual cars, including details such as the owner's name (first name, optional middle name, and surname), vehicle ID, car details (make and model), engine size, and manufactured date (month and year). The document specifies that there should be at least one car element within "cars".
+-->
+
 <!DOCTYPE cars [
   <!--
-    Purpose of the car element: Represents an individual car and its associated details.
+  Purpose of the car element: Represents an individual car and its associated details.
   -->
   <!ELEMENT car (ownerName, vehicleID, details, engineSize, manufacturedDate)>
 

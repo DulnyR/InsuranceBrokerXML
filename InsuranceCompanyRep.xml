@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Purpose: This XML document serves as a structured representation of information related to insurance company representatives. It defines the structure for individual representatives, including details such as full name (composed of firstName, middleName, and surname), years on the job, company name, company location (composed of area, city, and country), and areas serviced by the representative. The document specifies that there should be at least one insuranceCompanyRep element within 
+"insuranceCompanyReps" . 
+-->
+
 <!DOCTYPE insuranceCompanyReps [
   <!--
     Purpose of the insuranceCompanyRep element: Represents an individual insurance company representative and their associated details.

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Purpose: This XML document provides a structured representation of insurance policies. It defines the structure for individual insurance policies, including account name details (composed of firstName, middleName, and surname), premium, deductible, policy limits, and exclusions. The document specifies that there should be at least one insurancePolicy element within insurancePolicies.
+-->
+
 <!DOCTYPE insurancePolicies [
   <!--
     Purpose of the insurancePolicy element: Represents an individual insurance policy and its details.

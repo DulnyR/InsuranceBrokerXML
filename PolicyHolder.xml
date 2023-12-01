@@ -1,3 +1,7 @@
+<!--
+Purpose: This XML document is designed to manage information related to policyholders. It defines the structure for individual policyholders, including attributes such as age, and includes details such as full name (with elements like first name, optional middle name, and surname), driving experience (months of experience and license type), optional traffic violation records (incident, date, description), optional vehicle identification number, and bank account number. The document specifies that there should be at least one policyHolder element within    "policyHolders", and age is a required attribute for each policyholder.
+-->
+
 <!DOCTYPE policyHolders [
   <!-- 
     Purpose of the policyHolder element: Represents an individual policyholder and their associated information.

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Purpose: This XML document serves as a structured representation of information related to insurance companies. It defines the structure for individual insurance companies, including details such as company name, company location (composed of area, city, and country), number of employees, and company domain. The document specifies that there should be at least one insuranceCompany element within the insuranceCompanies element.  
+-->
+
 <!DOCTYPE insuranceCompanies [
   <!--
     Purpose of the insuranceCompany element: Represents an individual insurance company and its associated details.

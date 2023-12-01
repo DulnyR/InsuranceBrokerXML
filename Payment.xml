@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Purpose: This XML document serves as a structured representation for managing information related to payments. It defines the format for individual payment entries, including data such as payment amount, account number, account name (comprising first name, optional middle name, and surname), and billing address (consisting of house number, street, city, and country). The document also specifies that there should be at least one payment element within the payments container.
+-->
+
 <!DOCTYPE payments [
   <!--
     Purpose of the payment element: Represents an individual payment and its associated details.
